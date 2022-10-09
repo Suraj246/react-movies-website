@@ -1,38 +1,118 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;margin: 0;
+  box-sizing: border-box;
 }
+body{
+  background-color: #252525;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container-sidebar{
+  display: flex;
+  /* border: 1px solid red; */
 }
+main{
+  /* border: 1px solid red; */
+  width: 100%;
+  padding:20px ;
+  transition: .5s ease-in-out;  
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.sidebar{
+  background-color:#252525;
+  color:#fff;
+  min-height:100vh;
+  transition: .4s ease-in-out;  
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-start;
+}
+.top_section{
+  display: flex;
+  align-items: center; 
+  padding:20px 15px;
+  gap: 13px;
+}
+.logo{
+  font-size:30px;
+  text-decoration: none;
+
+}
+.nav-head{
+  text-decoration: none;
+  background-color: #252525;
+}
+.bars{
+  font-size:30px;
+  display:flex;
+  cursor: pointer;
+
+}
+.link{
+  display:flex;
+  color:white;
+  text-decoration: none;
+  padding: 10px 30px;
+}
+.link:hover{
+  background-color:lightskyblue;
+  color: #252525;
+  transition: all 0.3s;
+}
+.active{
+  /* background-color:rgb(135, 250, 206); */
+  color: #fffdfd;
 }
 
-.App-link {
-  color: #61dafb;
+.movie-lists{
+  /* display: flex; */
+  /* flex-direction:row; */
+  /* border:11px solid green; */
 }
+.movie-container{
+  /* border:1px solid red; */
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 10px;
+  width:100%; */
+  background-color: #252525;
+}
+.movie-list{
+  border:1px solid rgb(80, 74, 74);
+  width:12rem;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  /* padding:10px; */
+  height:fit-content;
+}
+.movie-info{
+  padding:7px 4px;
+}
+.ratings {
+  color:rgb(227, 227, 3);
+  margin-right: 7px; 
+}
+/* model */
+.modal-body{
+  display: flex;
+  gap: 30px;
+  position: relative;
+  background-color: #252525;
+color: #fff;
+}
+.modal-cancel{
+  color: #fff;
+  background-color: #2e2e2e6c;
+
+}
+/* .modal-title-img{
+  width: 65rem;
+  height: 25rem;
+} */
+.model-movie-info{
+  /* border: 1px solid red; */
+  position: relative;
+}
+.model-footer{
+  color: #fff;
+  background-color: #252525;
 }
